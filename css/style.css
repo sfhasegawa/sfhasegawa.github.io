@@ -219,7 +219,13 @@ header #logo {
 #menubar li a {
 	text-decoration: none;display: block;
 	padding: 10px;	/*ボックス内の余白*/
-	border-bottom: 2px dotted #ccc;	/*下の線の幅、線種、色*/
+	border-bottom: 2px solid #ccc;	/*下の線の幅、線種、色*/
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+#menubar li a:hover {
+	box-shadow: inset 400px 0 0 0 #ede;
 }
 /*スマホ用メニューを表示させない*/
 #menubar-s {display: none;}
